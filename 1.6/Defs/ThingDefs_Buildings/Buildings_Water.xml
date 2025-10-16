@@ -4,7 +4,7 @@
     <ThingDef ParentName="BasedWaterWell" DBHLite="true">
         <defName>TEFNUT_GravshipWaterGenerator</defName>
         <label>water generator</label>
-        <description>Uses atmospheric water generation systems that extract moisture from the air to produce clean, drinkable water, primarily used on gravships. This self-sustaining design reduces reliance on traditional water infrastructure.</description>
+        <description>Uses atmospheric water generation systems that extract moisture from the air to produce clean, drinkable water, primarily used on gravships. Produces 600L/day</description>
         <size>(2,2)</size>
         <graphicData>
             <texPath>TEFNUT/Things/Building/Water/GravshipWaterGenerator</texPath>
@@ -15,6 +15,7 @@
         <!--<specialDisplayRadius>13.7</specialDisplayRadius>-->
         <statBases>
             <WorkToBuild>30000</WorkToBuild>
+            <MaxHitPoints>150</MaxHitPoints>
         </statBases>
         <costList>
             <Steel>125</Steel>
@@ -39,11 +40,8 @@
                 <Deep>true</Deep>
                 <Radius>13.7</Radius>
             </li> -->
-            <li Class="TefnutGravshipWaterSystems.CompProperties_AtmosphericWaterInlet">
-                <AtmosphericRate>1500</AtmosphericRate>
-            </li>
-            <li Class="DubsBadHygiene.CompProperties_WaterPumpingStation">
-                <Capacity>1500</Capacity>
+            <li Class="TefnutGravshipWaterSystems.CompProperties_AtmosphericWaterStation">
+                <Capacity>600</Capacity>
             </li>
         </comps>
         <!-- <placeWorkers>
@@ -60,7 +58,7 @@
     <ThingDef ParentName="BasedWaterTower" DBHLite="true">
         <defName>TEFNUT_GravshipWaterTank</defName>
         <label>water tank</label>
-        <description>Stores water for use by plumbed fixtures on gravships. The water must be drained if it becomes contaminated. Capacity: 3000.</description>
+        <description>Stores water for use by plumbed fixtures on gravships. The water must be drained if it becomes contaminated. Capacity: 3000L.</description>
         <graphicData>
             <texPath>TEFNUT/Things/Building/Water/GravshipWaterTank</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
@@ -86,9 +84,9 @@
             </li>
         </comps>
         <statBases>
-            <MaxHitPoints>75</MaxHitPoints>
+            <MaxHitPoints>350</MaxHitPoints>
             <WorkToBuild>2200</WorkToBuild>
-            <Flammability>1.0</Flammability>
+            <Flammability>0.0</Flammability>
         </statBases>
         <researchPrerequisites>
             <li>MicroelectronicsBasics</li>

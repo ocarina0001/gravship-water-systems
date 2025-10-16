@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\tefnut-gravship-water-generator\1.6\Assemblies\TefnutGravshipWaterSystems.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\tefnut-gravship-water-generator\1.6\Assemblies\TefnutGravshipWaterSystems.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\tefnut-gravship-water-generator\1.6\Source\TefnutGravshipWaterSystems\obj\Debug\TefnutGravshipWaterSystems.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\tefnut-gravship-water-generator\1.6\Source\TefnutGravshipWaterSystems\obj\Debug\TefnutGravshipWaterSystems.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\tefnut-gravship-water-generator\1.6\Source\TefnutGravshipWaterSystems\obj\Debug\TefnutGravshipWaterSystems.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\tefnut-gravship-water-generator\1.6\Source\TefnutGravshipWaterSystems\obj\Debug\TefnutGravshipWaterSystems.pdb

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="BasedWaterWell" DBHLite="true">
+        <defName>TEFNUT_GravshipWaterGenerator</defName>
+        <label>water generator</label>
+        <description>Uses atmospheric water generation systems that extract moisture from the air to produce clean, drinkable water, primarily used on gravships. This self-sustaining design reduces reliance on traditional water infrastructure.</description>
+        <size>(2,2)</size>
+        <graphicData>
+            <texPath>TEFNUT/Things/Building/Water/GravshipWaterGenerator</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2.3,2.3)</drawSize>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <!--<specialDisplayRadius>13.7</specialDisplayRadius>-->
+        <statBases>
+            <WorkToBuild>30000</WorkToBuild>
+        </statBases>
+        <costList>
+            <Steel>125</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <researchPrerequisites>
+            <li>MicroelectronicsBasics</li>
+            <li MayRequire="dbhlitemode">ElectricPumps</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>500</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="DubsBadHygiene.CompProperties_Pipe">
+                <mode>Sewage</mode>
+            </li>
+            <!-- <li Class="DubsBadHygiene.CompProperties_WaterInlet">
+                <Deep>true</Deep>
+                <Radius>13.7</Radius>
+            </li> -->
+            <li Class="TefnutGravshipWaterSystems.CompProperties_AtmosphericWaterInlet">
+                <AtmosphericRate>1500</AtmosphericRate>
+            </li>
+            <li Class="DubsBadHygiene.CompProperties_WaterPumpingStation">
+                <Capacity>1500</Capacity>
+            </li>
+        </comps>
+        <!-- <placeWorkers>
+            <li>DubsBadHygiene.PlaceWorker_DeepWaterGrid</li>
+            <li>DubsBadHygiene.PlaceWorker_SewageGrid</li>
+            <li>DubsBadHygiene.PlaceWorker_UserGrid</li>
+            <li>PlaceWorker_InvalidOverSubstructure</li>
+        </placeWorkers> -->
+        <!-- <placeWorkers>
+            <li>PlaceWorker_InRangeOfGravEngine</li>
+        </placeWorkers> -->
+    </ThingDef>
+
+    <ThingDef ParentName="BasedWaterTower" DBHLite="true">
+        <defName>TEFNUT_GravshipWaterTank</defName>
+        <label>water tank</label>
+        <description>Stores water for use by plumbed fixtures on gravships. The water must be drained if it becomes contaminated. Capacity: 3000.</description>
+        <graphicData>
+            <texPath>TEFNUT/Things/Building/Water/GravshipWaterTank</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(1.5,2)</drawSize>
+        </graphicData>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <rotatable>true</rotatable>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <size>(1,2)</size>
+        <!-- <stuffCategories>
+            <li>Woody</li>
+            <li>Stony</li>
+            <li>Metallic</li>
+        </stuffCategories> -->
+        <costList>
+            <Steel>75</Steel>
+        </costList>
+        <!-- <costStuffCount>50</costStuffCount> -->
+        <comps>
+            <li Class="DubsBadHygiene.CompProperties_WaterStorage">
+                <WaterStorageCap>3000</WaterStorageCap>
+            </li>
+        </comps>
+        <statBases>
+            <MaxHitPoints>75</MaxHitPoints>
+            <WorkToBuild>2200</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <researchPrerequisites>
+            <li>MicroelectronicsBasics</li>
+            <li MayRequire="dbhlitemode">Plumbing</li>
+        </researchPrerequisites>
+        <!-- <placeWorkers>
+            <li>PlaceWorker_InRangeOfGravEngine</li>
+        </placeWorkers> -->
+    </ThingDef>
+
+</Defs>

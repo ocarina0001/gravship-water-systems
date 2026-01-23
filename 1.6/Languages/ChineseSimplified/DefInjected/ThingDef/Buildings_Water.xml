@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   <TEFNUT_GravshipWaterGenerator.label>水源发生器</TEFNUT_GravshipWaterGenerator.label>
-  <TEFNUT_GravshipWaterGenerator.description>采用大气造水系统，从空气中提取水分以生成洁净可饮用水，主要用于逆重飞船。每日产水量：600升。</TEFNUT_GravshipWaterGenerator.description>
+  <TEFNUT_GravshipWaterGenerator.description>采用大气造水系统，从空气中提取水分以生成干净的可饮用水，主要用于逆重飞船。每日产水量：600升。</TEFNUT_GravshipWaterGenerator.description>
   <TEFNUT_GravshipWaterTank.label>储水罐</TEFNUT_GravshipWaterTank.label>
-  <TEFNUT_GravshipWaterTank.description>用于储存逆重飞船上管道设施所需的用水。若水质受到污染，必须排空清理。容量：3000升。</TEFNUT_GravshipWaterTank.description>
+  <TEFNUT_GravshipWaterTank.description>用于储存逆重飞船上管道设施所需的水。若水体受到污染，必须排空清理。容量：3000升。</TEFNUT_GravshipWaterTank.description>
+
 </LanguageData>

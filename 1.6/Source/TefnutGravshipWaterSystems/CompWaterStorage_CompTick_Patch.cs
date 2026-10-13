@@ -24,8 +24,6 @@ namespace TefnutGravshipWaterSystems
             {
                 __instance.WaterQuality = ContaminationLevel.Treated;
             }
-
-            Harmony.DEBUG = true;
         }
     }
 }
